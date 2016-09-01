@@ -5,3 +5,9 @@ npm=$(shell npm bin)
 build:
 	@echo $(TAG)$@$(END)
 	$(npm)/webpack --config ./webpack.config.js
+
+watch:
+	@echo $(TAG)$@$(END)
+	$(npm)/parallelshell \
+    "$(npm)/webpack --config ./webpack.config.js --watch --progress" \
+    "$(npm)/nodemon build/app.js"

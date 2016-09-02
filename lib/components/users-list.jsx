@@ -5,8 +5,12 @@ export default class UsersList extends React.Component {
     super()
   }
 
+  handleClick(e) {
+    console.log('clicked')
+  }
+
   render() {
-    var lis = this.props.users.map((x, i) => <li>{x}</li>)
+    var lis = this.props.users.map((x, i) => <li onClick={this.handleClick}>{x}</li>)
     return (
       <html>
         <ul>

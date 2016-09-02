@@ -9,5 +9,6 @@ build:
 watch:
 	@echo $(TAG)$@$(END)
 	$(npm)/parallelshell \
-    "$(npm)/webpack --config ./webpack.config.js --watch --progress" \
+    "$(npm)/webpack --config ./webpack.server.config.js --watch --progress" \
+    "$(npm)/webpack --config ./webpack.browser.config.js --watch --progress" \
     "$(npm)/nodemon build/app.js"

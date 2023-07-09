@@ -33,7 +33,7 @@
     "eslint": "^3.4.0",
     "eslint-plugin-react": "^6.2.0",
     "json-loader": "^0.5.4",
-    "nodemon": "^1.10.2",
+    "nodemon": "^3.0.0",
     "parallelshell": "^2.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1",
